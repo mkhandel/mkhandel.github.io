@@ -5,10 +5,10 @@ Author: Mehek Khandelwal
 
 
 
+
 #navbar li {
     display: inline;
     padding: 25px;
-    text-decoration: none;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -31,6 +31,7 @@ Author: Mehek Khandelwal
   font-size: 20px;
   padding: 20px;
   transition: 0.6s;
+text-decoration: none;
 }
 
 .leftbar a:hover{
@@ -46,67 +47,42 @@ html{
 	scroll-behavior: smooth;
 }
 
-
 #profile_pic_background {
-    background-image: url("images/background.jpg"); 
-    height: 1000px;
-    width: 3000px;
+    background-image: url("images_background.jpg"); 
+    height: 600px;
     background-attachment: fixed; 
     background-position: center; 
     background-repeat: no-repeat;  
-    background-position: center;
-    text-align: center;
     z-index: 1;
+    top: 0px;
 }
-
-
-/*
-#profile_pic {
-    background-image: url("images/profile-pic.jpg"); 
-    min-height: 500px;  
-    background-attachment: fixed; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: contain; 
-    z-index: 2;
-}
-*/
-
-
-
-/*.parallax { 
-                
-    background-image: url("images/profile-pic.jpg"); 
-                min-height: 500px;  
-                background-attachment: fixed; 
-                background-position: center; 
-                background-repeat: no-repeat; 
-                background-size: contain; 
-            }*/
-
-
-
-
 
 #page_header {
-    width: 700px;
-    height: 80px;
-    text-align: right;
-    margin-left: auto;
-    margin-right: 40px;
-    background-attachment: fixed; 
-	top: 200px;
-    right: 40px;
-    color: black;
-    z-index: 2;
+    height: 0px;
+    position: relative;
+    z-index: 0;
     
 }
 
 #greeting {
+    width: 700px;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 40px;
+    background-attachment: fixed; 
+    z-index: 2;
     font-size: 30px;
+    top: 100px;
 }
 
 #name {
+    width: 700px;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 40px;
+    background-attachment: fixed; 
+    z-index: 2;
+    
     font-size: 50px;
 }
 
@@ -114,6 +90,7 @@ html{
 body {
     /*putting styles in the brackets that apply to body elements in html*/
     font-family: Tahoma, Arial, sans-serif;
+    background-color: lightgray;
     
     /*textured background for whole website*/
     /*
@@ -131,7 +108,11 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 500px;
-    background-color: lightgray;
+    background-color: grey;
+}
+
+.text-blocks{
+	margin-top: 300px;
 }
 
 /*body is recognized html element while page_header is an id that's given to some element in html; in other words,a defined item in the page*/
